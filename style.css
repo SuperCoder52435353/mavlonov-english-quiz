@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.login-container, .main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.animate-title {
+    font-size: 50px;
+    color: #2c3e50;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-100px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.form {
+    margin: 30px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.input-field {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.label {
+    font-size: 16px;
+    color: #555;
+}
+
+.age-slider {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+}
+
+.age-display {
+    font-size: 16px;
+    color: #4CAF50;
+}
+
+.confirm-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    display: none;
+    margin-top: 10px;
+}
+
+.profile {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.profile-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    margin: -15px -15px 10px -15px;
+}
+
+.profile-content {
+    font-size: 14px;
+    color: #333;
+}
+
+.results-list {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 13px;
+    color: #555;
+}
+
+.welcome-text {
+    font-size: 32px;
+    color: #2c3e50;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.playlists {
+    margin: 30px 0;
+}
+
+.playlist-btn {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.playlist-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.quiz-container {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-title {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+.quiz-question {
+    font-size: 20px;
+    color: #333;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.quiz-options button {
+    display: block;
+    width: 200px;
+    margin: 8px auto;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ecf0f1;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quiz-options button:hover {
+    background-color: #dfe4ea;
+    transform: scale(1.03);
+}
+
+.next-btn {
+    margin-top: 20px;
+    background-color: #e67e22;
+}
+
+.next-btn:hover {
+    background-color: #d35400;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

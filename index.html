@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-page" class="login-container">
+        <h1 class="animate-title">English Quiz</h1>
+        <p class="intro-text">Ism, familiya va yoshingizni kiriting:</p>
+        <div class="form">
+            <input type="text" id="firstName" placeholder="Ismingiz" class="input-field">
+            <input type="text" id="lastName" placeholder="Familiyangiz" class="input-field">
+            <label for="age" class="label">Yoshingiz:</label>
+            <input type="range" id="age" min="1" max="100" value="1" class="age-slider">
+            <span id="ageValue" class="age-display">1</span>
+            <button onclick="checkForm()" class="confirm-btn">Confirm</button>
+        </div>
+        <p id="error" class="error"></p>
+    </div>
+
+    <div id="main-page" class="main-container" style="display: none;">
+        <div class="profile animate-profile">
+            <div class="profile-header">
+                <h3>Profile</h3>
+            </div>
+            <div class="profile-content">
+                <p id="profileInfo"></p>
+                <div id="results" class="results-list"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1 class="welcome-text">Xush kelibsiz, <span id="userName"></span>!</h1>
+            <div class="playlists">
+                <button onclick="startQuiz('A1')" class="playlist-btn">A1 (Beginner) - 50 so‘z</button>
+                <button onclick="startQuiz('B1')" class="playlist-btn">B1 (Intermediate) - 30 so‘z</button>
+                <button onclick="startQuiz('B2')" class="playlist-btn">B2 (Upper Intermediate) - 25 so‘z</button>
+                <button onclick="startQuiz('C1')" class="playlist-btn">C1 (Advanced) - 25 so‘z</button>
+                <button onclick="startQuiz('C2')" class="playlist-btn">C2 (Proficiency) - 25 so‘z</button>
+            </div>
+
+            <div id="quiz" class="quiz-container animate-quiz" style="display: none;">
+                <h2 id="quizTitle" class="quiz-title"></h2>
+                <div class="progress-bar">
+                    <span id="progress"></span>
+                </div>
+                <p id="question" class="quiz-question"></p>
+                <div id="options" class="quiz-options"></div>
+                <button id="nextBtn" onclick="nextQuestion()" class="next-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
